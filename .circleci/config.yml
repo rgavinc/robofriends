@@ -16,7 +16,7 @@ jobs:
       - run: echo "Double Trouble"
 workflows:
   version: 2
-  echo1_echo2:
+  build_test:
     jobs:
-      - echo1
-      - echo2
+      - build
+      - test
