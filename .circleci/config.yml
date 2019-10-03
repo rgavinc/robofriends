@@ -1,8 +1,20 @@
 version: 2
 jobs:
-  build:
+  echo1:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
       - run: echo "A first hello"
+  echo2:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: echo "Double Trouble"
+workflows:
+  version: 2
+    echo1_echo2:
+      jobs:
+        - echo1
+        - echo2
