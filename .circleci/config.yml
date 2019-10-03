@@ -1,12 +1,14 @@
 version: 2
 jobs:
-  echo1:
+  build:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: circleci/node:8.9
     steps:
       - checkout
-      - run: echo "A first hello"
-  echo2:
+      - run: echo "npm installing"
+      - run: npm install
+      - run: CI=true
+  test:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
@@ -14,7 +16,7 @@ jobs:
       - run: echo "Double Trouble"
 workflows:
   version: 2
-  echo1_echo2:
+  build_test:
     jobs:
-      - echo1
-      - echo2
+      - build
+      - test
