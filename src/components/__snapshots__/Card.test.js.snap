@@ -19,7 +19,6 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        " ",
         <img
           alt="robots"
           src="https://robohash.org/undefined?200x200"
@@ -33,7 +32,6 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      " ",
       Object {
         "instance": null,
         "key": undefined,
@@ -93,7 +91,6 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          " ",
           <img
             alt="robots"
             src="https://robohash.org/undefined?200x200"
@@ -107,7 +104,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        " ",
         Object {
           "instance": null,
           "key": undefined,
